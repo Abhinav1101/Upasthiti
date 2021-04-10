@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherCourseAttendance"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teacherCourseAttendance_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="@string/show_below"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/teacherCourseAttendance_percentageEditView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:hint="@string/number"/>
+        <Button
+            android:id="@+id/teacherCourseAttendance_showButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show"/>
+        <Button
+            android:id="@+id/teacherCourseAttendance_sentEmailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sendEmail"/>
+
+        <ScrollView
+            android:id="@+id/teacherCourseAttendance_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_alignParentLeft="true" >
+
+            <HorizontalScrollView
+                android:id="@+id/teacherCourseAttendance_hscrll1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:id="@+id/teacherCourseAttendance_table_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                         >
+                    </TableLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

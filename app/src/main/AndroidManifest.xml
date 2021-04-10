@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ashish.attendancemanagerapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ashish.attendancemanagerapp.TeacherCourseAttendance"></activity>
+        <activity android:name="com.ashish.attendancemanagerapp.StudentCourseAttendance" />
+        <activity android:name="com.ashish.attendancemanagerapp.StudentScannerActivity" />
+        <activity
+            android:name="com.ashish.attendancemanagerapp.TeacherClassAttendance"
+            android:label="@string/title_activity_teacher_class_attendance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ashish.attendancemanagerapp.AdminActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ashish.attendancemanagerapp.TeacherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ashish.attendancemanagerapp.StudentCourseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.ashish.attendancemanagerapp.TeacherAddClass" />
+
+        <activity android:name="com.ashish.attendancemanagerapp.LoginActivity" />
+        <activity android:name="com.ashish.attendancemanagerapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
