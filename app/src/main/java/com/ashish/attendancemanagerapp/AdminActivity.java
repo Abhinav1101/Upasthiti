@@ -56,7 +56,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.adminActivity_studentActivityButton:
                 //Goto Admin Student Activity
-                
+
                 break;
         }
     }
